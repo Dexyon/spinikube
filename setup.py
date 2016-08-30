@@ -30,9 +30,9 @@ def c(cmd):
   o("kubectl create -f " + cmd + " --namespace spinnaker")
   time.sleep(2)
 
-o("minikube delete")
+#o("minikube delete")
 
-o("minikube start --memory 10000 --cpus 4 --disk-size=120g")
+o("minikube start --memory 10000 --cpus 8 --disk-size=120g")
 
 #o("kubectl delete namespace spinnaker")
 #time.sleep(30)
